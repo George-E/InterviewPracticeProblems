@@ -23,7 +23,7 @@ public class P1_1 {
 		return true;
 	}
 	
-	/*creating a arraylist of found chars would still be O(n^2) because .contains is O(n)
+	/*creating a arraylist of found chars would still be O(n^2) because .contains is O(n) (its implemented as .indexof(o) >= 0)
 	 * 
 	 *could create a bool array of size 256 [extended ascii] (or 128) if we know characters must be those ASCII values, but this is
 	 *highly space inefficient and requires the assumption
@@ -51,8 +51,8 @@ public class P1_1 {
 	
 	/*What I missed:
 	 * For the bool array, technically its still O(1) space if we know 128 and 256 alphabet (ask!)
-	 * Also runtime is capped at 128/256 if we initially check if s.length>256, meaning not unique b/c length?alphabet size
-	 * Even better than a bool arry is a BIT VECTOR, which would be 8 times more space efficient because bools are 8 bits
+	 * Also runtime is capped at 128/256 if we initially check if s.length>256, meaning not unique b/c length>alphabet size
+	 * Even better than a bool array is a BIT VECTOR, which would be 8 times more space efficient because bools are 8 bits
 	 * What is meant by a BIT VECTOR is just using bits of a single int using bit manipulation
 	 * Actually, if chars just a-z, a single int is big enough because its 32 bit (4 bytes)
 	 * would need to use a long (64 bit) if more, such as capital and lowercase
