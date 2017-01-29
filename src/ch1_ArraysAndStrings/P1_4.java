@@ -57,4 +57,15 @@ public class P1_4 {
 		
 		return true;
 	}
+	
+	/*see book for a genius use of bit vector
+	 * 
+	 * tldr; you might think a bit vector cant be used b/c unlike q1,
+	 * a character can occur more than once
+	 * the thing is, you dont need to count number of occurences, 
+	 * just know if its odd. Thus, just turn bits on and off, a bit of 1 means odd
+	 * 
+	 * Another smart trick is how they check that there's only 1 bit as 1 after
+	 * (bitvector & (bitvector -1)) == 0
+	 */
 }
