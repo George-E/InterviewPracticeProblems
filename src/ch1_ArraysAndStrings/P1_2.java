@@ -62,8 +62,10 @@ public class P1_2 {
 				chars.put(s1.charAt(c), 1);
 			}
 			else {
+				//cant add 1 to a null Integer
 				chars.put(s1.charAt(c), count + 1);
 			}
+			//OR chars.put(s1.charAt(c), ((count==null)?1:count + 1) );
 		}
 		for (int c=0; c<s2.length();c++) {
 			Integer count = (Integer) chars.get(s2.charAt(c));
