@@ -38,5 +38,11 @@ public class P1_5 {
 		}
 		return true;
 	}
+	
+	/*What I missed
+	 * 
+	 * Instead of switching the strings, I could increase readability by creating the second part in
+	 * a second function, passing the strings in reverse order if need be
+	 */
 
 }
