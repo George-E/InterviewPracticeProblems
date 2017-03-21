@@ -44,6 +44,16 @@ public class P1_1 {
 			} else {
 				chars.put(s.charAt(i), true);
 			}
+			//shoudve done 
+			/*
+			 if (chars.put(s.charAt(i), true) != null) { since put returns value key was last mapped to
+				return false;
+			}
+			 
+			 also shouldve used a HashSet instead since were only using one dimension
+			 */
+				
+					
 		}
 		return true;
 	}
