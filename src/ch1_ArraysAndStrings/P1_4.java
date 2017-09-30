@@ -9,7 +9,7 @@ public class P1_4 {
 	public static void main (String[] args) {
 		Scanner in = new Scanner(System.in);
 		while (true) {
-			System.out.println(isPalindrmePermuation(in.nextLine()));
+			System.out.println(isPalindromePermuation(in.nextLine()));
 		}
 	}
 
@@ -38,7 +38,7 @@ public class P1_4 {
 
 	 */
 	
-	public static boolean isPalindrmePermuation(String s) {
+	public static boolean isPalindromePermuation(String s) {
 		Map<Character, Integer> chars =  new HashMap<>();
 		s = s.replace(" ", "");
 		for (int c=0; c<s.length();c++) {

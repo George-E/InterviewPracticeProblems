@@ -53,7 +53,7 @@ public class P1_2 {
 			chars.put(s1.charAt(c), count + 1);
 			
 			*OR EVEN FASTER
-			*The following is fastest because get is only called once. Since containsKey implemented as .get90 != null,
+			*The following is fastest because get is only called once. Since containsKey implemented as .get() != null,
 			*the above methods are calling .get twice which is redundant
 			*/
 			
