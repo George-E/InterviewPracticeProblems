@@ -15,8 +15,9 @@ public class Node {
 		Node c = this;
 		StringBuilder str = new StringBuilder();
 		while (c != null) {
+			str.append("(");
 			str.append(c.data);
-			str.append(c.data + "\t");
+			str.append(")-> \t");
 			c = c.next;
 		}
 		return str.toString();
